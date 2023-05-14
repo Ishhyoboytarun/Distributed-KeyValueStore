@@ -52,9 +52,9 @@ func main() {
 
 	// initialize the router and register handlers for different routes
 	router := mux.NewRouter()
-	router.HandleFunc("/set/{key}/{value}", handleSet).Methods("POST")
-	router.HandleFunc("/get/{key}", handleGet).Methods("GET")
-	router.HandleFunc("/delete/{key}", handleDelete).Methods("DELETE")
+	router.HandleFunc("/set/{key}/{value}", handleSet).Methods(http.MethodPost, http.MethodPut)
+	router.HandleFunc("/get/{key}", handleGet).Methods(http.MethodGet)
+	router.HandleFunc("/delete/{key}", handleDelete).Methods(http.MethodDelete)
 
 	// start the HTTP server
 	fmt.Println("Starting server...")

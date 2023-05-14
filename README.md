@@ -1,4 +1,4 @@
-# Distributed KeyValueStore using etcd in Golang
+# Distributed KeyValueStore
 This project implements a distributed key-value store using the etcd library in Golang. The key-value store can be accessed by multiple clients concurrently over the network, and provides a consistent and fault-tolerant way of storing and retrieving data.
 
 

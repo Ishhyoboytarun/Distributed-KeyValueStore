@@ -37,10 +37,10 @@ To install and run the key-value store, follow these steps:
 
 ## Usage
 To interact with the key-value store, you can use the following API endpoints:
-
+```
 GET /get/{key} - Get the value associated with the given key.
 POST /set/{key}/{value} - Create a new key-value pair.
 PUT /set/{key}/{value} - Update the value associated with the given key.
 DELETE /delete/{key} - Delete the key-value pair associated with the given key.
-
+```
 You can use any HTTP client (such as curl or Postman) to make requests to these endpoints.
